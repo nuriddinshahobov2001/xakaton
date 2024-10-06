@@ -20,4 +20,8 @@ Route::get('logout', function (){
     return redirect()->route('home');
 })->name('logout');
 
+Route::middleware(['auth'])->group(function () {
+    Route::get('/dashboard', [\App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
+});
+
 require __DIR__.'/auth.php';

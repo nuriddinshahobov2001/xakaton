@@ -26,8 +26,8 @@ class DatabaseSeeder extends Seeder
             'password' => Hash::make('1'),
             'phone' => '+992987671091',
             'role' => '0',
-            'country_id' => null,
-            'city_id' => null,
+            'country_id' => '1',
+            'city_id' => '1',
         ]);
     }
 }

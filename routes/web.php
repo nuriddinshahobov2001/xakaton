@@ -15,4 +15,9 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 
+Route::get('logout', function (){
+    auth()->logout();
+    return redirect()->route('home');
+})->name('logout');
+
 require __DIR__.'/auth.php';

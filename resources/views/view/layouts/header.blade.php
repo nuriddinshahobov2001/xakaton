@@ -12,8 +12,13 @@
                 <li><a href="{{ route('home') }}" class="{{ request()->is('/') ? 'active' : ''}}">Home</a></li>
                 <li><a href="{{ route('application') }}" class="{{ request()->is('application') ? 'active' : ''}}">Application</a></li>
                 <li><a href="{{ route('about') }}" class="{{ request()->is('about') ? 'active' : ''}}">About</a></li>
-                <li><a href="{{ route('login') }}" class="{{ request()->is('login') ? 'active' : ''}}">Login</a></li>
-                <li><a href="{{ route('register') }}" class="{{ request()->is('register') ? 'active' : ''}}">Register</a></li>
+                @if(auth()->check())
+                    <li><a href="{{ route('home') }}" class="">Profile</a></li>
+                    <li><a href="{{ route('logout') }}" class="">Log out</a></li>
+                @else
+                    <li><a href="{{ route('login') }}" class="{{ request()->is('login') ? 'active' : ''}}">Login</a></li>
+                    <li><a href="{{ route('register') }}" class="{{ request()->is('register') ? 'active' : ''}}">Register</a></li>
+                @endif
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>

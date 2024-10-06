@@ -2,7 +2,7 @@
 
     <div class="container">
         <div class="copyright text-center ">
-            <p>© <span>Copyright</span> <strong class="px-1 sitename">greenSpace</strong> <span>All Rights Reserved</span></p>
+            <p>© <span>Copyright</span> <strong class="px-1 sitename" style="color:#71c55d">GreenSpace</strong> <span>All Rights Reserved</span></p>
         </div>
         <div class="social-links d-flex justify-content-center">
 {{--            <a href=""><i class="bi bi-facebook"></i></a>--}}

@@ -14,8 +14,8 @@
         <!-- Кнопки "Назад" и "Далее" -->
         <div class="d-flex justify-content-end">
             <div class="btn-group col-4">
-                <button class="btn btn-secondary" onclick="goBack()">Назад</button>
-                <button class="btn btn-primary" onclick="goNext()">Далее</button>
+                <button class="btn btn-secondary" onclick="goBack()">Previous question</button>
+                <button class="btn btn-primary" onclick="goNext()">Next question</button>
             </div>
         </div>
 

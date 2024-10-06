@@ -13,41 +13,41 @@
                         </ul>
                     </div>
                 @endif
-                <h2 class="text-center mb-4">Форма Регистрации</h2>
+                <h2 class="text-center mb-4">Registration</h2>
                 <form action="{{ route('register') }}" method="POST">
                     @csrf
                     <div class="mb-3">
-                        <label for="fullname" class="form-label">ФИО</label>
-                        <input type="text" class="form-control" id="fullname" name="name" value="User" required>
+                        <label for="fullname" class="form-label">Full name</label>
+                        <input type="text" class="form-control" id="fullname" name="name" required>
                     </div>
                     <div class="mb-3">
-                        <label for="country" class="form-label">Страна</label>
+                        <label for="country" class="form-label">Country</label>
                         <select class="form-select" id="country" name="country_id" required>
-                            <option value="" disabled selected>Выберите страну</option>
+                            <option value="" disabled selected>Select country</option>
                             @foreach($country as $c)
                                 <option value="{{ $c->id }}">{{ $c->name }}</option>
                             @endforeach
                         </select>
                     </div>
                     <div class="mb-3">
-                        <label for="city" class="form-label">Город</label>
+                        <label for="city" class="form-label">City</label>
                         <select class="form-select" id="city" name="city_id" required>
-                            <option value="" disabled selected>Выберите город</option>
+                            <option value="" disabled selected>Select city</option>
                         </select>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" name="email" value="user@gamil.com" required>
+                        <input type="email" class="form-control" id="email" name="email" required>
                     </div>
                     <div class="mb-3">
-                        <label for="password" class="form-label">Пароль</label>
-                        <input type="password" class="form-control" id="password" name="password" value="1" required>
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
                     </div>
                     <div class="mb-3">
-                        <label for="password_confirmed" class="form-label">Подтверждение пароля</label>
-                        <input type="password" class="form-control" id="password_confirmed" name="password_confirmation" value="1" required>
+                        <label for="password_confirmed" class="form-label">Conform password</label>
+                        <input type="password" class="form-control" id="password_confirmed" name="password_confirmation" required>
                     </div>
-                    <button type="submit" class="btn btn-primary w-100">Зарегистрироваться</button>
+                    <button type="submit" class="btn btn-primary w-100">Register</button>
                 </form>
             </div>
         </div>
@@ -66,7 +66,7 @@
         // Слушатель события для изменения списка городов
         countrySelect.addEventListener('change', function() {
             // Очищаем город
-            citySelect.innerHTML = '<option value="" disabled selected>Выберите город</option>';
+            citySelect.innerHTML = '<option value="" disabled selected>Select city</option>';
 
             // Получаем выбранную страну
             const selectedCountry = this.value; // Получаем значение страны (country_id)

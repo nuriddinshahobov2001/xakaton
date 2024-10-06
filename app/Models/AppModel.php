@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class ApplicationOptionModel extends Model
+class AppModel extends Model
 {
     use HasFactory;
     protected $guarded = false;

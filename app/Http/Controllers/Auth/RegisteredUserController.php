@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Models\CitiesModel;
+use App\Models\CountryModel;
 use App\Models\User;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Auth\Events\Registered;
@@ -20,7 +22,9 @@ class RegisteredUserController extends Controller
      */
     public function create(): View
     {
-        return view('auth.register');
+        $country = CountryModel::all();
+        $cities = CitiesModel::all();
+        return view('auth.register', compact('country', 'cities'));
     }
 
     /**
@@ -33,13 +37,19 @@ class RegisteredUserController extends Controller
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:'.User::class],
-            'password' => ['required', 'confirmed', Rules\Password::defaults()],
+            'password' => ['required', 'confirmed'],
+            'country_id' => ['required'],
+            'city_id' => ['required'],
         ]);
 
+//        dd($request->all());
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
+            'country_id' => $request->country_id,
+            'city_id' => $request->city_id,
+            'role' => '1'
         ]);
 
         event(new Registered($user));

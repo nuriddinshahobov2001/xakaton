@@ -25,6 +25,9 @@ class DatabaseSeeder extends Seeder
             'email' => 'admin@gmail.com',
             'password' => Hash::make('1'),
             'phone' => '+992987671091',
+            'role' => '0',
+            'country_id' => null,
+            'city_id' => null,
         ]);
     }
 }

@@ -13,7 +13,7 @@
                         <h4>Together We Thrive: Women and Nature United</h4>
                     <div class="d-flex">
                         <a href="/application" class="btn-get-started">Get Started</a>
-                        <a href="https://www.youtube.com/watch?v=kXf3PUicYkY&list=PLA0113C84B340CFAE" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+                        <a style="color: red; font-weight: bold; text-decoration: none; animation: blink 2s infinite;" href="https://www.youtube.com/watch?v=kXf3PUicYkY&list=PLA0113C84B340CFAE" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
                     </div>
                 </div>
                 <div class="col-lg-6 order-1 order-lg-2">
@@ -29,28 +29,28 @@
                     <div class="col-xl-3 col-md-6">
                         <div class="icon-box">
                             <div class="icon"><i class="bi bi-easel"></i></div>
-                            <h4 class="title"><a href="" class="stretched-link">Lorem Ipsum</a></h4>
+                            <h4 class="title"><a target="_blank" href="https://www.youtube.com/watch?v=luO8phhdfsA" class="stretched-link">Gender Disparities in Climate Impact</a></h4>
                         </div>
                     </div><!--End Icon Box -->
 
                     <div class="col-xl-3 col-md-6">
                         <div class="icon-box">
                             <div class="icon"><i class="bi bi-gem"></i></div>
-                            <h4 class="title"><a href="" class="stretched-link">Sed ut perspiciatis</a></h4>
+                            <h4 class="title"><a target="_blank" href="https://www.youtube.com/watch?v=YKmvdiXlDFI" class="stretched-link">Gender-Sensitive Climate Finance</a></h4>
                         </div>
                     </div><!--End Icon Box -->
 
                     <div class="col-xl-3 col-md-6">
                         <div class="icon-box">
                             <div class="icon"><i class="bi bi-geo-alt"></i></div>
-                            <h4 class="title"><a href="" class="stretched-link">Magni Dolores</a></h4>
+                            <h4 class="title"><a target="_blank" href="https://www.youtube.com/watch?v=01RVCzHXZFU" class="stretched-link">Women as Climate Leaders</a></h4>
                         </div>
                     </div><!--End Icon Box -->
 
                     <div class="col-xl-3 col-md-6">
                         <div class="icon-box">
                             <div class="icon"><i class="bi bi-command"></i></div>
-                            <h4 class="title"><a href="" class="stretched-link">Nemo Enim</a></h4>
+                            <h4 class="title"><a target="_blank" href="https://www.youtube.com/watch?v=VbEZ-SfyX38" class="stretched-link">Community Resilience and Gender</a></h4>
                         </div>
                     </div><!--End Icon Box -->
 
@@ -83,42 +83,28 @@
                         <div class="col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
                             <div class="feature-box d-flex align-items-center">
                                 <i class="bi bi-check"></i>
-                                <h3>Eos aspernatur rem</h3>
+                                <h3>Gender Disparities in Climate Impact</h3>
                             </div>
                         </div><!-- End Feature Item -->
 
                         <div class="col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
                             <div class="feature-box d-flex align-items-center">
                                 <i class="bi bi-check"></i>
-                                <h3>Facilis neque ipsa</h3>
+                                <h3>Gender-Sensitive Climate Finance</h3>
                             </div>
                         </div><!-- End Feature Item -->
 
                         <div class="col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
                             <div class="feature-box d-flex align-items-center">
                                 <i class="bi bi-check"></i>
-                                <h3>Volup amet volupt</h3>
+                                <h3>Women as Climate Leaders</h3>
                             </div>
                         </div><!-- End Feature Item -->
 
                         <div class="col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
                             <div class="feature-box d-flex align-items-center">
                                 <i class="bi bi-check"></i>
-                                <h3>Rerum omnis sint</h3>
-                            </div>
-                        </div><!-- End Feature Item -->
-
-                        <div class="col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="600">
-                            <div class="feature-box d-flex align-items-center">
-                                <i class="bi bi-check"></i>
-                                <h3>Alias possimus</h3>
-                            </div>
-                        </div><!-- End Feature Item -->
-
-                        <div class="col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="700">
-                            <div class="feature-box d-flex align-items-center">
-                                <i class="bi bi-check"></i>
-                                <h3>Repellendus molli</h3>
+                                <h3>Community Resilience and Gender</h3>
                             </div>
                         </div><!-- End Feature Item -->
 
@@ -142,9 +128,9 @@
 
                 <div class="col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
                     <div class="content px-xl-5">
-                        <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
+                        <h3><strong>Gender  </strong>and <br><strong>Climate</strong></h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                            Women and marginalized groups face the greatest impacts of climate change
                         </p>
                     </div>
                 </div>
@@ -153,41 +139,40 @@
 
                     <div class="faq-container">
                         <div class="faq-item">
-                            <h3><span class="num">1.</span> <span>Non consectetur a erat nam at lectus urna duis?</span></h3>
+                            <h3><span class="num">1.</span> <span>Climate Finance and Gender Aspects</span></h3>
                             <div class="faq-content">
-                                <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                                <p>
+                                    Climate finance should incorporate gender considerations to enhance effectiveness and equity.
+                                    Gender-sensitive financing addresses the needs of women, men, and individuals of diverse gender identities.
+                                    Access to climate-resilient enterprises and clean technologies empowers women to adapt to climate change and reduce emissions.
+                                </p>
                             </div>
                             <i class="faq-toggle bi bi-chevron-right"></i>
                         </div><!-- End Faq item-->
 
                         <div class="faq-item faq-active">
-                            <h3><span class="num">2.</span> <span>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</span></h3>
+                            <h3><span class="num">2.</span> <span>Role of Governments and Partners</span></h3>
                             <div class="faq-content">
-                                <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                                <p>Governments should create conditions that enable women's access to financial products and services.
+
+                                    The private sector and development partners must invest in projects that benefit women.
+
+                                    Communities should scale up solutions that consider gender aspects.
+                                </p>
                             </div>
                             <i class="faq-toggle bi bi-chevron-right"></i>
                         </div><!-- End Faq item-->
 
                         <div class="faq-item faq-active">
-                            <h3><span class="num">3.</span> <span>Dolor sit amet consectetur adipiscing elit pellentesque?</span></h3>
+                            <h3><span class="num">3.</span> <span>Financial Institutions and Gender Aspects</span></h3>
                             <div class="faq-content">
-                                <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
-                            </div>
-                            <i class="faq-toggle bi bi-chevron-right"></i>
-                        </div><!-- End Faq item-->
+                                <p>
 
-                        <div class="faq-item">
-                            <h3><span class="num">4.</span> <span>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</span></h3>
-                            <div class="faq-content">
-                                <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
-                            </div>
-                            <i class="faq-toggle bi bi-chevron-right"></i>
-                        </div><!-- End Faq item-->
+                                    Financial institutions and partners can establish funds for women, enhance their financial literacy, and develop gender-sensitive financial products.
 
-                        <div class="faq-item">
-                            <h3><span class="num">5.</span> <span>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</span></h3>
-                            <div class="faq-content">
-                                <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
+                                    Women and other marginalized groups must have an equal seat at the table in financial decision-making.
+
+                                    Gender-sensitive climate finance contributes to creating a more equitable and sustainable future for all.</p>
                             </div>
                             <i class="faq-toggle bi bi-chevron-right"></i>
                         </div><!-- End Faq item-->
@@ -201,3 +186,9 @@
 
     </section>
 @endsection
+<style>
+    @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.2; }
+    }
+</style>

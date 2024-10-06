@@ -18,10 +18,9 @@ class ViewController extends Controller
     }
     public function application(){
 
-        // Загружаем все вопросы вместе с их вариантами
-        $apps = ApplicationModel::with('options')->get();
+
         $countries = CountryModel::all();
         // Передаем данные в представление
-        return view('view.application', compact('apps','countries'));
+        return view('view.application', compact('countries'));
     }
 }

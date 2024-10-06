@@ -14,7 +14,7 @@
                         </ul>
                     </div>
                 @endif
-                <h2 class="text-center mb-4">Форма Входа</h2>
+                <h2 class="text-center mb-4">Login</h2>
                 <form action="{{ route('login') }}" method="POST">
                     @csrf
                     <div class="mb-3">

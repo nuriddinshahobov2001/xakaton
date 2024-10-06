@@ -1,5 +1,8 @@
 @extends('view.layouts.view')
 
+@section('title')
+{{ env('APP_NAME') }}
+@endsection
 @section('content')
     <!-- Hero Section -->
     <section id="hero" class="hero section light-background">
@@ -8,7 +11,7 @@
             <div class="row gy-5">
                 <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
                     <h2>
-                        <span style="color:#71c55d">green</span>
+                        <span style="color:#71c55d">Green</span>
                         Space</h2>
                         <h4>Together We Thrive: Women and Nature United</h4>
                     <div class="d-flex">
@@ -65,8 +68,7 @@
 
         <!-- Section Title -->
         <div class="container section-title aos-init aos-animate" data-aos="fade-up">
-            <h2>Features</h2>
-            <div><span>Check Our</span> <span class="description-title">Features</span></div>
+            <div><span class="description-title">Main Directions</span></div>
         </div><!-- End Section Title -->
 
         <div class="container">

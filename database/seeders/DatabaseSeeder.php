@@ -24,6 +24,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'Amdmin',
             'email' => 'admin@gmail.com',
             'password' => Hash::make('1'),
+            'phone' => '+992987671091',
         ]);
     }
 }

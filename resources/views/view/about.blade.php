@@ -8,38 +8,16 @@
 
             <div class="row gy-4">
 
-                <div class="col-lg-6 content aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                    <p class="who-we-are">Who We Are</p>
-                    <h3>Unleashing Potential with Creative Strategy</h3>
-                    <p class="fst-italic">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua.
-                    </p>
-                    <ul>
-                        <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                        <li><i class="bi bi-check-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                        <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
-                    </ul>
-                    <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                <div class="col-lg-6 content aos-init aos-animate pt-5" data-aos="fade-up" data-aos-delay="100">
+                    <img src="assets/img/about.png" class="mt-5" style="width:100%">
                 </div>
-
-                <div class="col-lg-6 about-images aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-                    <div class="row gy-4">
-                        <div class="col-lg-6">
-                            <img src="assets/img/about-company-1.jpg" class="img-fluid" alt="">
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="row gy-4">
-                                <div class="col-lg-12">
-                                    <img src="assets/img/about-company-2.jpg" class="img-fluid" alt="">
-                                </div>
-                                <div class="col-lg-12">
-                                    <img src="assets/img/about-company-3.jpg" class="img-fluid" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                <div class="col-lg-6 content aos-init aos-animate" style="text-align: justify" data-aos="fade-up" data-aos-delay="100">
+                    <p class="who-we-are">Who We Are</p>
+                    <h3>About Green Space</h3>
+                    <p>At Green Space, we are dedicated to exploring the intricate connections between gender, climate, and ecology. Our mission is to raise awareness about how climate change disproportionately affects women and marginalized communities, while also highlighting the critical role they play in driving sustainable solutions.</p>
+                    <p>In recent years, issues such as gender-based violence exacerbated by climate crises, the impact of natural disasters on women's livelihoods, and the need for inclusive decision-making in climate policy have become increasingly urgent. We aim to address these topics through research, discussions, and community engagement, focusing on the unique challenges faced by women in different regions and contexts.</p>
+                    <p>We also emphasize the importance of women's leadership in climate action, advocating for greater representation in environmental organizations and policy-making processes. By amplifying women's voices and experiences, we can promote innovative solutions that benefit both communities and ecosystems.</p>
+                    <p>Join us as we delve into these pressing challenges and opportunities at the intersection of gender and climate. Together, we can foster a deeper understanding of these issues and inspire collective efforts toward a healthier planet for everyone.</p>
                 </div>
 
             </div>
@@ -52,8 +30,7 @@
 
         <!-- Section Title -->
         <div class="container section-title aos-init aos-animate" data-aos="fade-up">
-            <h2>Services</h2>
-            <div><span>Check Our</span> <span class="description-title">Services</span></div>
+            <div><span class="description-title">Our team</span></div>
         </div><!-- End Section Title -->
 
         <div class="container">
@@ -63,13 +40,26 @@
                 <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
                     <div class="service-item position-relative">
                         <div class="icon">
-                            <img src="{{asset('assets/img/n.jpg')}}" alt="Avatar" class="avatar">
+                            <img src="{{asset('assets/img/davlatjon.jpg')}}" alt="Avatar" class="avatar">
                         </div>
                         <a href="service-details.html" class="stretched-link">
-                            <h3>Asperiores Commodit</h3>
+                            <h3>Hakimov Davlatjon</h3>
                         </a>
-                        <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-                        <a href="service-details.html" class="stretched-link"></a>
+                        <p style="text-align: justify">Oversee team organization, ensure effective communication, make key decisions, represent the team, resolve conflicts, and manage resources efficiently.</p>
+                        <a target="_blank" href="https://t.me/Davlat_Hakimov" class="stretched-link"></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-item position-relative">
+                        <div class="icon">
+                            <img src="{{asset('assets/img/muminjon.jpg')}}" alt="Avatar" class="avatar">
+                        </div>
+                        <a href="service-details.html" class="stretched-link">
+                            <h3>Fayziev Muminjon</h3>
+                        </a>
+                        <p style="text-align: justify">As a dedicated web development team lead, I bring extensive experience in managing projects and driving team success. With a strong foundation in both front-end and back-end technologies, my ultimate focus is on delivering high-quality solutions in OJSC Bank Eskhata</p>
+                        <a target="_blank" href="https://t.me/muminf" class="stretched-link"></a>
                     </div>
                 </div>
 
@@ -79,62 +69,36 @@
                             <img src="{{asset('assets/img/n.jpg')}}" alt="Avatar" class="avatar">
                         </div>
                         <a href="service-details.html" class="stretched-link">
-                            <h3>Asperiores Commodit</h3>
+                            <h3>Shahobov Nuriddin</h3>
                         </a>
-                        <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-                        <a href="service-details.html" class="stretched-link"></a>
+                        <p style="text-align: justify">As a skilled middle PL/SQL and web developer, I specialize in creating efficient database solutions and dynamic web applications. With a solid foundation in SQL and programming languages, I excel in designing and optimizing database structures while ensuring seamless integration with front-end technologies.</p>
+                        <a target="_blank" href="https://t.me/shahobovN" class="stretched-link"></a>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
                     <div class="service-item position-relative">
                         <div class="icon">
-                            <img src="{{asset('assets/img/n.jpg')}}" alt="Avatar" class="avatar">
+                            <img src="{{asset('assets/img/salmon.jpg')}}" alt="Avatar" class="avatar">
                         </div>
                         <a href="service-details.html" class="stretched-link">
-                            <h3>Asperiores Commodit</h3>
+                            <h3>Narzulloev Salmon</h3>
                         </a>
-                        <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-                        <a href="service-details.html" class="stretched-link"></a>
+                        <p style="text-align: justify">Positions: Graphic Designer and Business Analyst. Creating project designs and presentations, developing business processes, designing and BPMN diagrams of processes. Preliminary analysis and defining the next steps of the project.</p>
+                        <a target="_blank" href="https://t.me/salmon_narzulloev_work" class="stretched-link"></a>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
                     <div class="service-item position-relative">
                         <div class="icon">
-                            <img src="{{asset('assets/img/n.jpg')}}" alt="Avatar" class="avatar">
+                            <img src="{{asset('assets/img/parviz.jpg')}}" alt="Avatar" class="avatar">
                         </div>
                         <a href="service-details.html" class="stretched-link">
-                            <h3>Asperiores Commodit</h3>
+                            <h3>Karimov Parviz</h3>
                         </a>
-                        <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-                        <a href="service-details.html" class="stretched-link"></a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
-                    <div class="service-item position-relative">
-                        <div class="icon">
-                            <img src="{{asset('assets/img/n.jpg')}}" alt="Avatar" class="avatar">
-                        </div>
-                        <a href="service-details.html" class="stretched-link">
-                            <h3>Asperiores Commodit</h3>
-                        </a>
-                        <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-                        <a href="service-details.html" class="stretched-link"></a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
-                    <div class="service-item position-relative">
-                        <div class="icon">
-                            <img src="{{asset('assets/img/n.jpg')}}" alt="Avatar" class="avatar">
-                        </div>
-                        <a href="service-details.html" class="stretched-link">
-                            <h3>Asperiores Commodit</h3>
-                        </a>
-                        <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-                        <a href="service-details.html" class="stretched-link"></a>
+                        <p style="text-align: justify">Business Analyst. Creating project requirements, developing a business plan, assigning tasks to team members, and testing the developed product.</p>
+                        <a href="#" class="stretched-link"></a>
                     </div>
                 </div>
 
@@ -163,7 +127,7 @@
                         <i class="bi bi-geo-alt flex-shrink-0"></i>
                         <div>
                             <h3>Address</h3>
-                            <p>A108 Adam Street, New York, NY 535022</p>
+                            <p>Tajikistan, Khujang</p>
                         </div>
                     </div><!-- End Info Item -->
 
@@ -171,7 +135,7 @@
                         <i class="bi bi-telephone flex-shrink-0"></i>
                         <div>
                             <h3>Call Us</h3>
-                            <p>+1 5589 55488 55</p>
+                            <a href="tel:+992927513838">+992 92 751 3838</a>
                         </div>
                     </div><!-- End Info Item -->
 
@@ -179,7 +143,7 @@
                         <i class="bi bi-envelope flex-shrink-0"></i>
                         <div>
                             <h3>Email Us</h3>
-                            <p>info@example.com</p>
+                            <p>fayzievmuminjon@gmail.com</p>
                         </div>
                     </div><!-- End Info Item -->
 

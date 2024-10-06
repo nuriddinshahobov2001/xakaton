@@ -7,10 +7,12 @@
         <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
             <div class="row gy-5">
                 <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                    <h2>eStartup</h2>
-                    <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+                    <h2>
+                        <span style="color:#71c55d">green</span>
+                        Space</h2>
+                        <h4>Together We Thrive: Women and Nature United</h4>
                     <div class="d-flex">
-                        <a href="#about" class="btn-get-started">Get Started</a>
+                        <a href="/application" class="btn-get-started">Get Started</a>
                         <a href="https://www.youtube.com/watch?v=kXf3PUicYkY&list=PLA0113C84B340CFAE" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
                     </div>
                 </div>

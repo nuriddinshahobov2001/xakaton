@@ -33,6 +33,9 @@
                         <label for="city" class="form-label">City</label>
                         <select class="form-select" id="city" name="city_id" required>
                             <option value="" disabled selected>Select city</option>
+                            @foreach($cities as $c)
+                                <option value="{{ $c->id }}">{{ $c->name . ' - ' . $c->states->name . ' - ' . $c->states->country->name }}</option>
+                            @endforeach
                         </select>
                     </div>
                     <div class="mb-3">
@@ -55,38 +58,38 @@
 
 
 
-    <script>
-        // Объект с городами
-        const allCities = @json($cities); // Убедитесь, что $cities содержит массив городов
+{{--    <script>--}}
+{{--        // Объект с городами--}}
+{{--        const allCities = @json($cities); // Убедитесь, что $cities содержит массив городов--}}
 
-        // Получаем элементы селекторов
-        const countrySelect = document.getElementById('country');
-        const citySelect = document.getElementById('city');
+{{--        // Получаем элементы селекторов--}}
+{{--        const countrySelect = document.getElementById('country');--}}
+{{--        const citySelect = document.getElementById('city');--}}
 
-        // Слушатель события для изменения списка городов
-        countrySelect.addEventListener('change', function() {
-            // Очищаем город
-            citySelect.innerHTML = '<option value="" disabled selected>Select city</option>';
+{{--        // Слушатель события для изменения списка городов--}}
+{{--        countrySelect.addEventListener('change', function() {--}}
+{{--            // Очищаем город--}}
+{{--            citySelect.innerHTML = '<option value="" disabled selected>Select city</option>';--}}
 
-            // Получаем выбранную страну
-            const selectedCountry = this.value; // Получаем значение страны (country_id)
+{{--            // Получаем выбранную страну--}}
+{{--            const selectedCountry = this.value; // Получаем значение страны (country_id)--}}
 
-            // Фильтруем города по выбранной стране
-            const filteredCities = allCities.filter(city => city.country_id === selectedCountry);
+{{--            // Фильтруем города по выбранной стране--}}
+{{--            const filteredCities = allCities.filter(city => city.country_id === selectedCountry);--}}
 
-            // Заполняем города на основе выбранной страны
-            if (filteredCities.length > 0) {
-                filteredCities.forEach(city => {
-                    const option = document.createElement('option');
-                    option.value = city.id; // Используем id города в качестве значения
-                    option.textContent = city.name; // Название города
-                    citySelect.appendChild(option);
-                });
-            } else {
-                console.warn("No cities found for country id:", selectedCountry); // Предупреждение, если не найдено
-            }
-        });
-    </script>
+{{--            // Заполняем города на основе выбранной страны--}}
+{{--            if (filteredCities.length > 0) {--}}
+{{--                filteredCities.forEach(city => {--}}
+{{--                    const option = document.createElement('option');--}}
+{{--                    option.value = city.id; // Используем id города в качестве значения--}}
+{{--                    option.textContent = city.name; // Название города--}}
+{{--                    citySelect.appendChild(option);--}}
+{{--                });--}}
+{{--            } else {--}}
+{{--                console.warn("No cities found for country id:", selectedCountry); // Предупреждение, если не найдено--}}
+{{--            }--}}
+{{--        });--}}
+{{--    </script>--}}
 
 
 @endsection

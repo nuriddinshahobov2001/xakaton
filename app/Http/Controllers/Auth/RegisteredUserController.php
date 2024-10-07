@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use App\Models\CitiesModel;
-use App\Models\CountryModel;
+use App\Models\Admin\CountryModel;
+use App\Models\Admin\SitiesModel;
 use App\Models\User;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Auth\Events\Registered;
@@ -23,7 +23,7 @@ class RegisteredUserController extends Controller
     public function create(): View
     {
         $country = CountryModel::all();
-        $cities = CitiesModel::all();
+        $cities = SitiesModel::all();
         return view('auth.register', compact('country', 'cities'));
     }
 

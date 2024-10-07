@@ -11,12 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('cities_models', function (Blueprint $table) {
+        Schema::create('sites_models', function (Blueprint $table) {
             $table->id();
-            $table->string('country_id')->constrained()->onDelete('cascade');
+            $table->string('states_id');
             $table->string('name');
             $table->timestamps();
-
         });
     }
 
@@ -25,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('cities_models');
+        Schema::dropIfExists('sites_models');
     }
 };

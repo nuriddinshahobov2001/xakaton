@@ -3,9 +3,8 @@
 namespace App\Http\Controllers\View;
 
 use App\Http\Controllers\Controller;
-use App\Models\ApplicationModel;
-use App\Models\ApplicationOptionModel;
-use App\Models\CountryModel;
+use App\Models\Admin\CountryModel;
+use App\Models\Admin\SitiesModel;
 use Illuminate\Http\Request;
 
 class ViewController extends Controller
@@ -17,10 +16,8 @@ class ViewController extends Controller
         return view('view.about');
     }
     public function application(){
-
-
         $countries = CountryModel::all();
-        // Передаем данные в представление
-        return view('view.application', compact('countries'));
+        $cities = SitiesModel::all();
+        return view('view.application', compact('countries', 'cities'));
     }
 }

@@ -11,22 +11,29 @@
                         </div>
                         <!--navigation-->
                         <ul class="metismenu mm-show" id="menu">
-                            <li class="mm-active">
-                                <a href="widgets.html">
+                            <li class="{{ request()->is('dashboard') ? 'mm-active' : '' }}">
+                                <a href="{{ route('dash.index') }}">
                                     <div class="parent-icon"><i class="bx bx-cookie"></i>
                                     </div>
                                     <div class="menu-title">Dashboard</div>
                                 </a>
                             </li>
-                            <li>
-                                <a href="widgets.html">
+                            <li class="{{ request()->is('country') ? 'mm-active' : '' }}">
+                                <a href="{{ route('country.index') }}">
                                     <div class="parent-icon"><i class="bx bx-cookie"></i>
                                     </div>
                                     <div class="menu-title">Country</div>
                                 </a>
                             </li>
-                            <li>
-                                <a href="widgets.html">
+                            <li class="{{ request()->is('states') ? 'mm-active' : '' }}">
+                                <a href="{{ route('states.index') }}">
+                                    <div class="parent-icon"><i class="bx bx-cookie"></i>
+                                    </div>
+                                    <div class="menu-title">States</div>
+                                </a>
+                            </li>
+                            <li class="{{ request()->is('city') ? 'mm-active' : '' }}">
+                                <a href="{{ route('city.index') }}">
                                     <div class="parent-icon"><i class="bx bx-cookie"></i>
                                     </div>
                                     <div class="menu-title">City</div>

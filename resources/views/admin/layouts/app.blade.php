@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="{{asset('admin/assets/css/dark-theme.css')}}" />
     <link rel="stylesheet" href="{{asset('admin/assets/css/semi-dark.css')}}" />
     <link rel="stylesheet" href="{{asset('admin/assets/css/header-colors.css')}}" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>@yield('title')</title>
 </head>
 <body class="bg-theme bg-theme2">

@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -22,7 +21,22 @@ Route::get('logout', function (){
 })->name('logout');
 
 Route::middleware(['auth'])->group(function () {
-    Route::get('/dashboard', [\App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
+    Route::name('dash.')->group(function () {
+        Route::get('/dashboard', [\App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('index');
+    });
+
+    Route::name('country.')->group(function () {
+        Route::get('/country', [\App\Http\Controllers\Admin\CountryController::class, 'index'])->name('index');
+        Route::post('/country', [\App\Http\Controllers\Admin\CountryController::class, 'store'])->name('store');
+    });
+    Route::name('states.')->group(function () {
+        Route::get('/states', [\App\Http\Controllers\Admin\StatesController::class, 'index'])->name('index');
+        Route::post('/states', [\App\Http\Controllers\Admin\StatesController::class, 'store'])->name('store');
+    });
+    Route::name('city.')->group(function () {
+        Route::get('/city', [\App\Http\Controllers\Admin\SitiesController::class, 'index'])->name('index');
+        Route::post('/city', [\App\Http\Controllers\Admin\SitiesController::class, 'store'])->name('store');
+    });
 });
 
 require __DIR__.'/auth.php';

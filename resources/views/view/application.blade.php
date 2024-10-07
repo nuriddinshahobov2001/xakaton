@@ -85,8 +85,9 @@
                 </select>
             </div>
 
-
-            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            <div class="d-flex justify-content-end mt-3">
+                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            </div>
         </form>
     </div>
 

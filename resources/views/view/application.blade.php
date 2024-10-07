@@ -2,42 +2,56 @@
 
 @section('content')
 
-
-        <form>
+    <div class="form-container">
+        <h2>Survey Form</h2>
+        <form action="{{ route('app') }}" method="POST">
+            @csrf
             <div class="form-group">
                 <label for="fullName">Full Name</label>
-                <input type="text" class="form-control" id="fullName" required>
+                <input type="text" class="form-control" id="fullName" name="name" required>
             </div>
 
             <div class="form-group">
                 <label for="birthDate">Date of Birth</label>
-                <input type="date" class="form-control" id="birthDate" required>
+                <input type="date" class="form-control" id="birthDate" name="date" required>
             </div>
 
             <div class="form-group">
                 <label for="region">Region</label>
-                <input type="text" class="form-control" id="region" required>
+                <input type="text" class="form-control" id="region" name="region" required>
             </div>
 
             <div class="form-group">
                 <label for="city">City/Town</label>
-                <input type="text" class="form-control" id="city" required>
+                <input type="text" class="form-control" id="city" name="city" required>
             </div>
 
             <div class="form-group">
                 <label for="maritalStatus">Marital Status</label>
-                <select class="form-control" id="maritalStatus" required>
+                <select class="form-control" id="maritalStatus" name="status" required>
                     <option value="" disabled selected>Select...</option>
                     <option value="single">Single</option>
                     <option value="married">Married</option>
                     <option value="divorced">Divorced</option>
                     <option value="widowed">Widowed</option>
-
                 </select>
             </div>
 
             <div class="form-group">
+                <label for="initialEducation">Initial Education - Number of Grades Completed</label>
+                <input type="number" class="form-control" id="initialEducation" name="education" required>
 
+                <small class="form-text">If incomplete, please specify the reason:</small>
+                <select class="form-control" id="reasonIncomplete" name="parents">
+                    <option value="" disabled selected>Select...</option>
+                    <option value="parents">Parents</option>
+                    <option value="financial">Financial Situation</option>
+                    <option value="personal">Personal Choice</option>
+                    <option value="distance">Difficult to Reach School</option>
+                </select>
+            </div>
+
+            <div class="form-group">
                 <label for="specialEducation">Special Education</label>
                 <input type="text" class="form-control" name="special_education" id="specialEducation">
             </div>
@@ -71,54 +85,9 @@
                 </select>
             </div>
 
-
-                <label for="initialEducation">Initial Education - Number of Grades Completed</label>
-                <input type="number" class="form-control" id="initialEducation" required>
-                <small class="form-text">If incomplete, please specify the reason:</small>
-                <select class="form-control" id="reasonIncomplete">
-                    <option value="" disabled selected>Select...</option>
-                    <option value="parents">Parents</option>
-                    <option value="financial">Financial Situation</option>
-                    <option value="personal">Personal Choice</option>
-                    <option value="distance">Difficult to Reach School</option>
-                </select>
+            <div class="d-flex justify-content-end mt-3">
+                <button type="submit" class="btn btn-primary btn-block">Submit</button>
             </div>
-
-            <div class="form-group">
-                <label for="specialEducation">Special Education</label>
-                <input type="text" class="form-control" id="specialEducation">
-            </div>
-
-            <div class="form-group">
-                <label for="university">University</label>
-                <input type="text" class="form-control" id="university">
-                <small class="form-text">If not, please specify the reason:</small>
-                <select class="form-control" id="reasonNoUniversity">
-                    <option value="" disabled selected>Select...</option>
-                    <option value="parents">Parents</option>
-                    <option value="financial">Financial Situation</option>
-                    <option value="personal">Personal Choice</option>
-                    <option value="marriage">Marriage</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="profession">Profession</label>
-                <select class="form-control" id="profession">
-                    <option value="" disabled selected>Select...</option>
-                    <option value="housewife">Housewife</option>
-                    <option value="office_worker">Office Worker</option>
-                    <option value="trader">Trader</option>
-                    <option value="laborer">Laborer</option>
-                    <option value="agriculture">Agriculture</option>
-                    <option value="healthcare">Healthcare Institution</option>
-                    <option value="government">Government Institution</option>
-                    <option value="educational">Educational Institution</option>
-                </select>
-            </div>
-
-
-            <button type="submit" class="btn btn-primary btn-block">Submit</button>
         </form>
     </div>
 
@@ -157,5 +126,4 @@
             color: #6c757d;
         }
     </style>
-
 @endsection

@@ -101,7 +101,7 @@
                             <h3>Karimov Parviz</h3>
                         </a>
                         <p style="text-align: justify">Business Analyst. Creating project requirements, developing a business plan, assigning tasks to team members, and testing the developed product.</p>
-                        <a href="#" class="stretched-link"></a>
+                        <a target="_blank" href="https://t.me/ParvizKarimov_10" class="stretched-link"></a>
                     </div>
                 </div>
 

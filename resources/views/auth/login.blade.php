@@ -1,4 +1,7 @@
 @extends('view.layouts.view')
+@section('title')
+    Login
+@endsection
 
 @section('content')
     <div class="container mt-5 mb-5">

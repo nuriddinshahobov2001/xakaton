@@ -1,6 +1,9 @@
 @extends('view.layouts.view')
 
-@section('content')
+@section('title')
+    Application
+@endsection
+    @section('content')
 
         <div class="card m-5">
             <form action="{{ route('app') }}" method="POST">

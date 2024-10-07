@@ -1,4 +1,7 @@
 @extends('view.layouts.view')
+@section('title')
+    About
+@endsection
 
 @section('content')
 

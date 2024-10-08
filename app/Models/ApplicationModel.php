@@ -7,7 +7,7 @@ use App\Models\Admin\SitiesModel;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class AppModel extends Model
+class ApplicationModel extends Model
 {
     use HasFactory;
     protected $guarded = false;

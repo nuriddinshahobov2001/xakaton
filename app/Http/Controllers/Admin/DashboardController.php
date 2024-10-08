@@ -3,12 +3,12 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\AppModel;
+use App\Models\ApplicationModel;
 
 class DashboardController extends Controller
 {
     public function index(){
-        $apps = AppModel::all();
+        $apps = ApplicationModel::all();
         return view('admin.dashboard', compact('apps'));
     }
 }

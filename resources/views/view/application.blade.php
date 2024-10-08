@@ -10,8 +10,12 @@
         <form action="{{ route('app') }}" method="POST">
             @csrf
             <div class="card-header">
-                <h2>Survey Form</h2>
-                <a href="{{ asset('templ/Questionnaire_Gender_Climate_Final.docx') }}" class="text-primary" download>Download file</a>
+                <div class="d-flex justify-content-between">
+                    <h2>Survey Form</h2>
+                    <div class="d-flex justify-content-center align-items-center bg bg-primary px-3 rounded">
+                        <a href="{{ asset('templ/Questionnaire_Gender_Climate_Final.docx') }}" class="text-white" download>Download file</a>
+                    </div>
+                </div>
             </div>
             <div class="card-body">
                 <!-- Full Name and Date of Birth -->

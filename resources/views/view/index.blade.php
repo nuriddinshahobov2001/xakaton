@@ -75,7 +75,7 @@
 {{--                        <li><h4> <a href="" class="mb-3 text-primary fw-bold fs-8">Nohiyai Tobei Markaz</a></h4></li>--}}
 {{--                    </ol>--}}
 {{--                </div>--}}
-                <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="col-sm-12 col-md-4 col-lg-4">
                     <h1 class="mb-3 text-center">Tajikistan</h1>
                     <div>
                         <canvas id="myChart2"></canvas>
@@ -155,22 +155,6 @@
         new Chart(ctx, config3);
         new Chart(ctx2, config2);
     </script>
-
-    <section>
-        <div class="container p-5">
-            <div class="row">
-                <div class="col-12">
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-
-    </script>
-
-
 
     <section id="features" class="features section light-background">
 

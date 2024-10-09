@@ -104,7 +104,7 @@
                 'Nohiyai Tobei Markaz'
             ],
             datasets: [{
-                label: 'Количесто участников',
+                label: 'Count  of participants',
                 data: [50, 35, 90.9, 55],
                 backgroundColor: [
                     'rgb(98, 212, 75 )',
@@ -124,7 +124,7 @@
                 'Nohiyai Tobei Markaz'
             ],
             datasets: [{
-                label: 'Количесто участников',
+                label: 'Count  of participants',
                 data: [50, 35, 90.9, 55],
                 backgroundColor: [
                     'rgb(98, 212, 75 )',

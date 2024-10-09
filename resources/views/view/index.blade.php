@@ -64,6 +64,112 @@
     </section><!-- /Hero Section -->
 
 
+    <section>
+        <div class="container p-5">
+            <div class="row d-flex justify-content-center">
+                <div class="col-4 d-flex flex-column align-items-center justify-content-center text-right text-bold">
+                    <ol>
+                        <li><h4> <a href="" class="mb-3 text-primary fw-bold fs-8">Sugd</a></h4></li>
+                        <li><h4> <a href="" class="mb-3 text-primary fw-bold fs-8">Khatlon</a></h4></li>
+                        <li><h4> <a href="" class="mb-3 text-primary fw-bold fs-8">Badakhshon</a></h4></li>
+                        <li><h4> <a href="" class="mb-3 text-primary fw-bold fs-8">Nohiyai Tobei Markaz</a></h4></li>
+                    </ol>
+                </div>
+                <div class="col-8">
+                    <h1 class="mb-3 text-center">Tajikistan</h1>
+                    <div>
+                        <canvas id="myChart2"></canvas>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx2 = document.getElementById('myChart2');
+        const data2 = {
+            labels: [
+                'Sugd',
+                'Khatlon',
+                'Badakhshon',
+                'Nohiyai Tobei Markaz'
+            ],
+            datasets: [{
+                label: 'Количесто участников',
+                data: [50, 35, 90.9, 55],
+                backgroundColor: [
+                    'rgb(98, 212, 75 )',
+                    'rgb(58,224,246)',
+                    'rgb(255,51,98)',
+                    'rgb(255,252,0)'
+                ],
+                hoverOffset: 4
+            }]
+        };
+
+        // Конфигурация графика
+        const config2 = {
+            type: 'doughnut',
+            data: data2,
+        };
+
+        new Chart(ctx2, config2);
+    </script>
+
+    <section>
+        <div class="container p-5">
+            <div class="row">
+                <div class="col-12">
+                    <div>
+                        <h1 class="mb-3 text-center">Tajikistan</h1>
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('myChart');
+
+        const data = {
+            labels: [
+                'Sugd',
+                'Khatlon',
+                'Badakhshon',
+                'Nohiyai Tobei Markaz'
+            ],
+            datasets: [{
+                label: 'Количесто участников',
+                data: [50, 35, 90.9, 55],
+                backgroundColor: [
+                    'rgb(98, 212, 75 )',
+                    'rgb(58,224,246)',
+                    'rgb(255,51,98)',
+                    'rgb(255,252,0)'
+                ],
+                hoverOffset: 4
+            }]
+        };
+
+        const config3 = {
+            type: 'bar',
+            data: data,
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            },
+        };
+        new Chart(ctx, config3);
+    </script>
+
+
+
     <section id="features" class="features section light-background">
 
         <!-- Section Title -->
@@ -76,7 +182,7 @@
             <div class="row gy-5 justify-content-between">
 
                 <div class="col-xl-5 aos-init aos-animate" data-aos="zoom-out" data-aos-delay="100">
-                    <img src="assets/assets/img//template/eStartup/features.svg" class="img-fluid" alt="">
+                    <img src="{{asset('assets/assets/img//template/eStartup/features.svg')}}" class="img-fluid" alt="">
                 </div>
 
                 <div class="col-xl-6 d-flex">
@@ -118,7 +224,6 @@
         </div>
 
     </section>
-
 
 
 
